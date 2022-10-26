@@ -1,0 +1,57 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18px"
+    android:height="19.92px"
+    android:viewportWidth="18"
+    android:viewportHeight="19.92">
+    <!-- Groups and paths will go here-->
+    <group>
+
+        <path
+            android:fillColor="@color/white"
+            android:strokeWidth="1"
+            android:strokeColor="@color/white"
+
+            android:pathData="M 4, 7
+        m -3, 2
+        a 1.2,1.2 0 2.4,2.4 3.6,0
+
+        a 1.2,1.2 0 2.4,2.4 -3.6,0"
+            />
+
+        <path
+            android:fillColor="@color/white"
+            android:strokeWidth="1"
+            android:strokeColor="@color/white"
+
+            android:pathData="M 14, 14
+        m -3, 2
+        a 1.2,1.2 0 2.4,2.4 3.6,0
+
+        a 1.2,1.2 0 2.4,2.4 -3.6,0"
+            />
+        <path
+            android:fillColor="@color/white"
+            android:strokeWidth="1"
+            android:strokeColor="@color/white"
+
+            android:pathData="M 14, 1
+        m -3, 2
+        a 1.2,1.2 0 2.4,2.4 3.6,0
+
+        a 1.2,1.2 0 2.4,2.4 -3.6,0"
+            />
+        <!-- Lines -->
+        <path
+            android:fillColor="@color/white"
+            android:strokeWidth="1"
+
+            android:pathData="M1,9 L 2,10 L 14,3 L 14,1 Z"/>
+
+        <path
+            android:fillColor="@color/white"
+            android:strokeWidth="1"
+
+            android:pathData="M2,8 L 2,10 L 14,18 L 14,16 Z"/>
+
+    </group>
+</vector>
