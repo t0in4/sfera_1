@@ -7,6 +7,10 @@
     android:background="@color/maincolor"
     tools:context=".MainActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/borderline"
         android:layout_width="0dp"
@@ -128,11 +132,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/id">
 
-        <ImageView
+        <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@drawable/image"
+            android:src="@drawable/bear"
+            app:civ_border="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -148,21 +153,20 @@
 
             <TextView
                 android:id="@+id/some_id"
+                style="@style/some_id"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginTop="12dp"
-                android:fontFamily="@font/inter"
-                android:gravity="center|center_vertical|center_horizontal"
 
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+
+                android:gravity="center|center_vertical|center_horizontal"
                 android:text="@string/some_id"
+
                 android:textSize="24sp"
 
-                style="@style/some_id"
 
-
-                android:translationY="-7dp"
-
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -212,5 +216,139 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profilename"
         />
+    <!--geoposition-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/geoposition"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/geoposition"
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/globe"/>
+    <!--globe text -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/globe_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="24dp"
+
+
+        app:layout_constraintLeft_toRightOf="@id/globe"
+
+        app:layout_constraintTop_toBottomOf="@id/profilename">
+
+
+        <TextView
+            android:id="@+id/globetextview"
+            style="@style/some_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/languages"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/globe"
+            app:layout_constraintTop_toBottomOf="@id/profilename"
+            tools:ignore="NotSibling" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--geoposition text-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/geoposition_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="58dp"
+
+
+        app:layout_constraintLeft_toRightOf="@id/globe"
+
+        app:layout_constraintTop_toBottomOf="@id/profilename">
+
+
+        <TextView
+            android:id="@+id/globtextView"
+            style="@style/some_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/geoposition"
+            android:textSize="14sp"
+            android:fontFamily="@font/inter"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/geoposition"
+            app:layout_constraintTop_toBottomOf="@id/geoposition"
+            tools:ignore="NotSibling" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--choose 1-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/choose1_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/profilename">
+
+
+        <TextView
+            android:id="@+id/chooselanguage"
+            style="@style/some_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/choose"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:textColor="#9575CD"
+            android:fontFamily="@font/inter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--choose2-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/choose2_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="16dp"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/profilename">
+
+
+        <TextView
+            android:id="@+id/choosegeo"
+            style="@style/some_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:textColor="#9575CD"
+            android:fontFamily="@font/inter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
