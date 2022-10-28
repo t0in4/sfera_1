@@ -1,0 +1,85 @@
+<!-- drawable/path.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+
+    >
+
+    <group
+        android:translateX="-8"
+        android:translateY="9">
+
+        <path
+            android:fillColor="#9575CD"
+            android:pathData="M 11.5, 1
+        m -3, 2
+        a 3.2,3.2 0 6.4,6.4 22.6,0
+
+        a 3.2,3.2 0 6.4,6.4 -22.6,0"
+            />
+        <group
+            android:translateX="1.9">
+        <path
+            android:fillColor="#000000"
+            android:pathData="M 11.5, 1
+        m -3, 2
+        a 3.2,3.2 0 6.4,6.4 18.1,0
+
+        a 3.2,3.2 0 6.4,6.4 -18.1,0"
+            />
+        </group>
+        <!--lines-->
+        <group
+            android:translateY="1"
+            android:translateX="9">
+            <path
+                android:fillColor="#9575CD"
+                android:strokeWidth="1"
+
+                android:pathData="M1,5 L 2,7 L 20,7 L 20,5Z"/>
+        </group>
+        <group
+            android:translateY="-6"
+            android:translateX="9">
+            <path
+                android:fillColor="#9575CD"
+                android:strokeWidth="1"
+
+                android:pathData="M2,5 L 1,7 L 20,7 L 20,5Z"/>
+        </group>
+        <!--curves-->
+        <group
+            android:translateY="-15.2"
+            android:translateX="22.5"
+            android:rotation="37">
+            <path
+
+                android:strokeWidth="2"
+                android:strokeColor="#9575CD"
+
+                android:pathData="M2,9
+                A 15,15 0, 0, 0, 15,24.2"/>
+        </group>
+
+        <group
+            android:translateY="-15.5"
+            android:translateX="23.5"
+            android:rotation="38">
+            <path
+
+                android:strokeWidth="2"
+                android:strokeColor="#9575CD"
+
+                android:pathData="M2,9
+                A 15,15 0, 0, 1, 15,24.2"/>
+        </group>
+
+
+
+    </group>
+
+</vector>

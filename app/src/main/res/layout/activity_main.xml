@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/maincolor">
+    android:background="@color/maincolor"
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/borderline"
@@ -21,6 +21,7 @@
 
         <androidx.appcompat.widget.LinearLayoutCompat
 
+            android:id="@+id/linearLayoutCompat"
             android:layout_width="46dp"
             android:layout_height="10dp"
             android:layout_alignParentEnd="true"
@@ -35,7 +36,7 @@
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:background="@drawable/top_rectangle"
-                android:clickable="true"
+
 
                 />
 
@@ -44,16 +45,16 @@
                 android:layout_height="10dp"
                 android:layout_marginHorizontal="8dp"
                 android:background="@drawable/top_circle"
-                android:clickable="true"/>
+                 />
 
             <LinearLayout
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:background="@drawable/top_reverse_triangle"
+
                 android:pivotX="50"
                 android:pivotY="50"
-                android:rotation="180"
-                android:clickable="true"/>
+                android:rotation="180" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -73,13 +74,29 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!--ID-->
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id"
         android:layout_width="125dp"
         android:layout_height="24dp"
         android:layout_marginStart="35dp"
+
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/hamburger"
-        app:layout_constraintTop_toBottomOf="@+id/borderline"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/borderline">
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/page_title"
+            android:textAppearance="@style/page_title"
+            android:translationY="-1.11sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     <!--Share-->
@@ -95,7 +112,105 @@
         app:layout_constraintTop_toBottomOf="@id/borderline">
 
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Profile Picture-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image"
+        android:layout_width="160dp"
+
+        android:layout_height="160dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/elevation"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/elevation"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView">
+
+            <TextView
+                android:id="@+id/some_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/inter"
+                android:gravity="center|center_vertical|center_horizontal"
+
+                android:text="@string/some_id"
+                android:textSize="24sp"
+
+                style="@style/some_id"
+
+
+                android:translationY="-7dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Subtitle One name of the profile image-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/profilename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+
+
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alice Peterson"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter"
+            style="@style/some_id"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--globe-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/globe"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/globe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profilename"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

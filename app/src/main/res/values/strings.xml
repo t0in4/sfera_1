@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">sfera_1</string>
+    <string name="page_title">ID 123 456 789</string>
+    <string name="some_id">0</string>
 </resources>

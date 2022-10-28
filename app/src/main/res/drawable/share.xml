@@ -2,58 +2,57 @@
     android:width="80dp"
     android:height="80dp"
     android:viewportWidth="18"
-    android:viewportHeight="19.95">
+    android:viewportHeight="19.95"
+    >
     <!-- Groups and paths will go here-->
     <group
         android:translateX="2.8"
-        android:translateY="1">
+        android:translateY="1"
+        >
 
         <path
-            android:fillColor="@color/white"
-            android:strokeWidth="1"
-            android:strokeColor="@color/white"
-
-            android:pathData="M 4, 7
+            android:fillColor="#99FFFFFF"
+            android:pathData="M 2, 7
         m -3, 2
-        a 1.2,1.2 0 2.4,2.4 3.6,0
+        a 2.2,2.2 0 4.4,4.4 6.6,0
 
-        a 1.2,1.2 0 2.4,2.4 -3.6,0"
+        a 2.2,2.2 0 4.4,4.4 -6.6,0"
             />
 
         <path
-            android:fillColor="@color/white"
-            android:strokeWidth="1"
-            android:strokeColor="@color/white"
-
-            android:pathData="M 14, 14
+            android:fillColor="#99FFFFFF"
+            android:pathData="M 11.5, 13.5
         m -3, 2
-        a 1.2,1.2 0 2.4,2.4 3.6,0
+        a 2.2,2.2 0 4.4,4.4 6.6,0
 
-        a 1.2,1.2 0 2.4,2.4 -3.6,0"
+        a 2.2,2.2 0 4.4,4.4 -6.6,0"
             />
         <path
-            android:fillColor="@color/white"
-            android:strokeWidth="1"
-            android:strokeColor="@color/white"
-
-            android:pathData="M 14, 1
+            android:fillColor="#99FFFFFF"
+            android:pathData="M 11.5, 1
         m -3, 2
-        a 1.2,1.2 0 2.4,2.4 3.6,0
+        a 2.2,2.2 0 4.4,4.4 6.6,0
 
-        a 1.2,1.2 0 2.4,2.4 -3.6,0"
+        a 2.2,2.2 0 4.4,4.4 -6.6,0"
             />
         <!-- Lines -->
         <path
-            android:fillColor="@color/white"
-            android:strokeWidth="1"
+            android:fillColor="#99FFFFFF"
 
-            android:pathData="M1,9 L 2,10 L 14,3 L 14,1 Z"/>
+
+
+            android:pathData="M3.9,6 L 5.5,8
+
+            L 9.6,5.5
+
+
+            L 8.5,3 Z"/>
 
         <path
-            android:fillColor="@color/white"
-            android:strokeWidth="1"
+            android:fillColor="#99FFFFFF"
 
-            android:pathData="M2,8 L 2,10 L 14,18 L 14,16 Z"/>
+
+            android:pathData="M5.5,10 L 3.9,12 L 8.6,15 L 9.7,13Z"/>
 
     </group>
 </vector>

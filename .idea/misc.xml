@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/elevation.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/geoposition.xml" value="0.1905" />
+        <entry key="app/src/main/res/drawable/globe.xml" value="0.1995" />
         <entry key="app/src/main/res/drawable/hamburger.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/image.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/menu.xml" value="0.2005" />
         <entry key="app/src/main/res/drawable/share.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/share2.xml" value="0.1595" />
         <entry key="app/src/main/res/drawable/top_buttons.xml" value="0.1455" />
         <entry key="app/src/main/res/drawable/top_circle.xml" value="0.1445" />
+        <entry key="app/src/main/res/drawable/top_rectangle.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/top_reverse_triangle.xml" value="0.1445" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.75" />
       </map>
     </option>
   </component>
