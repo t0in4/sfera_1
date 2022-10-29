@@ -6,4 +6,6 @@
     <string name="choose">Choose</string>
     <string name="languages">Russian, English, German</string>
     <string name="geoposition">New York City, USA</string>
+    <string name="question">Questionnaires</string>
+    <string name="people">People</string>
 </resources>

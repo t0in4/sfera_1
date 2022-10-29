@@ -35,6 +35,13 @@ android {
 dependencies {
     //circular image view
     implementation 'com.mikhaellopez:circularimageview:4.3.1'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/button_shape.xml" value="0.1995" />
         <entry key="app/src/main/res/drawable/elevation.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/geoposition.xml" value="0.1905" />
         <entry key="app/src/main/res/drawable/globe.xml" value="0.1995" />
@@ -15,7 +16,9 @@
         <entry key="app/src/main/res/drawable/top_circle.xml" value="0.1445" />
         <entry key="app/src/main/res/drawable/top_rectangle.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/top_reverse_triangle.xml" value="0.1445" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22195560887822435" />
+        <entry key="app/src/main/res/layout/item.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/recycler_item.xml" value="0.1" />
       </map>
     </option>
   </component>
