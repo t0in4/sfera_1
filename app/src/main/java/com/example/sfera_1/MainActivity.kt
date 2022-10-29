@@ -1,7 +1,10 @@
 package com.example.sfera_1
 
 import android.os.Bundle
+import android.widget.AdapterView
+import android.widget.GridView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +15,12 @@ class MainActivity : AppCompatActivity() {
     lateinit var profilename: TextView
     lateinit var mRecyclerView: RecyclerView
     lateinit var mRecyclerView2: RecyclerView
+
+    // working with gridview - start
+    lateinit var gridView: GridView
+    private var playerNames = arrayOf("Cristiano Ronaldo", "Joao Felix", "Bernado Silva", "Andre Silve", "Bruno Fernandez", "William Carvalho", "Nelson Semedo", "Pepe", "Rui Patricio")
+    private var playerImages = intArrayOf(R.drawable.ronaldo, R.drawable.felix, R.drawable.bernado, R.drawable.andre, R.drawable.bruno,R.drawable.carvalho, R.drawable.semedo, R.drawable.pepe, R.drawable.patricio)
+    // working with gridview - end
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +51,19 @@ class MainActivity : AppCompatActivity() {
 
         mRecyclerView2.adapter = HorizontalAdapter(dataset2)
         // second recycler view - end
+
+        // grid layout - start
+        title = "KotlinApp"
+        gridView = findViewById(R.id.gridView)
+        val mainAdapter = MainAdapter(this@MainActivity, playerNames, playerImages)
+        gridView.adapter = mainAdapter
+        gridView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
+            Toast.makeText(
+                applicationContext, "You CLicked " + playerNames[+position],
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+        // grid layout- end
 
     }
 
