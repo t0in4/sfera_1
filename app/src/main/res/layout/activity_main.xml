@@ -369,7 +369,7 @@
             <!--Button questionaries-->
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/question"
-                android:layout_width="160dp"
+                android:layout_width="0dp"
                 android:layout_height="36dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="24dp"
@@ -378,15 +378,17 @@
                 android:textAllCaps="true"
                 android:fontFamily="@font/inter"
                 android:textColor="#DEFFFFFF"
+                android:layout_marginRight="4dp"
 
                 app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/people"
                 app:layout_constraintTop_toBottomOf="@id/horizontalrecyclerview"/>
             <!--Button people-->
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/people"
-                android:layout_width="160dp"
+                android:layout_width="0dp"
                 android:layout_height="36dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="4dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/people"
@@ -397,9 +399,10 @@
                 android:textAllCaps="true"
                 android:fontFamily="@font/inter"
                 android:textColor="#DEFFFFFF"
-                
+
 
                 app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/question"
                 app:layout_constraintTop_toBottomOf="@id/horizontalrecyclerview"/>
 
             <!--about me-->
@@ -491,6 +494,7 @@
 
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/counter"
+
                 />
             <!--wishes button-->
             <androidx.appcompat.widget.AppCompatButton

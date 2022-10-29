@@ -18,6 +18,7 @@ internal class MainAdapter(
     private lateinit var textView: TextView
     override fun getCount(): Int {
         return numbersInWords.size
+
     }
     override fun getItem(position: Int): Any? {
         return null
